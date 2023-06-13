@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index.html</h1>
+    <button onclick="openUploadModal()">
+        Open Upload Modal
+    </button>
+    <script>
+        let currentFiles;
+
+        function load(files) {
+            currentFiles = files;
+        }
+
+        function openUploadModal() {
+            window.open('./upload.html')
+        }
+    </script>
+</body>
+</html>
